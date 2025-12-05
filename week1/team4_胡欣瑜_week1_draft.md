@@ -27,11 +27,11 @@
 2）借助ubuntu启动盘安装ubuntu系统
 ##### BIOS设置
 - 将制作好的ubuntu启动盘插入想要安装双系统的电脑中，重启电脑，按F2进入启动项选择，进入BIOS界面，将安全启动关闭，U盘设为第一顺位，按F10保存并退出
-![BIOS界面](image\3_20251205114450_79_173.jpg)
+![BIOS界面](image/3_20251205114450_79_173.jpg)
 ##### ubuntu系统安装
 按F12进入启动设备页面，选择启动盘对应的选项，进入到Ubuntu安装程序中
 
-![启动页面](image\1_20251205110609_73_173.jpg)
+![启动页面](image/1_20251205110609_73_173.jpg)
 - 从 U 盘启动后，选择"Install Ubuntu"，语言切换为"中文（简体）"，点击"继续";
 - 取消"下载更新"和"安装第三方软件"（后续手动配置），点击"继续";
 - 安装类型选择"其他选项"，手动创建分区：
@@ -46,7 +46,7 @@
 
 ##### 双系统切换验证
 - 重启后自动进入 GRUB 启动菜单，可选择“Ubuntu 20.04 LTS”或“Windows Boot Manager”，分别启动两个系统，确认均可正常运行。
-![Ubuntu系统桌面](image\4.png)
+![Ubuntu系统桌面](image/4.png)
 ##### 系统时间同步
 打开终端
 - 安装时间同步工具
@@ -86,8 +86,8 @@ umake ide  visual-studio-code
 安装成功后输入code即可启动
 #### 3）C++插件安装及Hello World运行
 - 通过VSCode拓展插件下载所需插件，输入代码
-![c++插件安装](image\5.png)
-![运行成功图示](image\Hello_World.png)
+![c++插件安装](image/5.png)
+![运行成功图示](image/Hello_World.png)
 ### 3.**Git**
 - Gitbash安装
 - Git和Github绑定
