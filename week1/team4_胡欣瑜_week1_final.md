@@ -91,6 +91,41 @@ umake ide  visual-studio-code
 ### 3.**Git**
 - Gitbash安装
 - Git和Github绑定
+- 1） 生成SSH密钥对，在终端执行
+
+```shell
+ssh-keygen -t ed25519 -C"github注册邮箱"
+```
+- 2）将公钥添加到Github,复制公钥内容
+```shell
+cat ~/.ssh/id_ed25519.pub
+```
+登录github，进入Settings>SSH and GPG keys>New SSH key,粘贴公钥并命名，点击Add SSH key
+- 3）验证SSH连接
+```shell
+ssh -T git@github.com
+```
+
+出现Hi Akihi036!You've successfully authenticated...即验证成功
+- 4）关联并推送仓库
+- 关联远程仓库
+```shell
+git remote add origin git@github.com:Akihi036
+```
+
+执行推送
+```shell
+git push -u origin main
+```
+- 5）连接成功后
+- 拉取远程仓库更新
+```shell
+git pull origin main
+```
+- 查看远程仓库关联
+```shell
+git remote -v
+```
 - Git基本命令
 - git init
 - git config --global user.name "yourname"
